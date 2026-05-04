@@ -4,6 +4,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
     "lucide-react": "latest",
