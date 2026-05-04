@@ -2,9 +2,10 @@
 
 A Vite + React product landing page for Aura Alignment.
 
-## Run locally
-npm install
-npm run dev
+Aura Alignment is a smart posture corrector and app experience designed to help you stand taller, feel confident, and build a healthier lifestyle one gentle reminder at a time.
+
+## Deployed link
+https://aura-alignment-sigma.vercel.app
 
 ## Deploy on Vercel
 1. Upload this folder to GitHub.
@@ -15,5 +16,3 @@ npm run dev
 6. Output Directory: dist.
 7. Deploy.
 
-Domain shown on the site: www.auraaligment.com
-Support email shown on the site: suuport@auraaligment.com

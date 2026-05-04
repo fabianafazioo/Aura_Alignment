@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import productImage from "../assets-product.png";
 import "./Checkout.css";
+
 
 export default function Checkout() {
   const productPrice = 129;
@@ -55,7 +57,7 @@ export default function Checkout() {
             <h2>Order Summary</h2>
 
             <div className="product-card">
-              <img src="/src/assets-product.png" alt="Aura Alignment Device" />
+              <img src={productImage} alt="Aura Alignment Device" />
               <div>
                 <h3>Aura Alignment Device</h3>
                 <p>Smart posture corrector + app access included</p>
