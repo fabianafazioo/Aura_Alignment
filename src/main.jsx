@@ -396,9 +396,9 @@ function HomePage() {
         <div>
           <h3>Aura Alignment</h3>
           <p>Elevate Your Presence</p>
-          <p>www.auraaligment.com</p>
-          <a href="mailto:support@auraaligment.com">
-            <Mail size={16} /> support@auraaligment.com
+          <p>www.auraalignment.com</p>
+          <a href="mailto:support@auraalignment.com">
+            <Mail size={16} /> support@auraalignment.com
           </a>
         </div>
 

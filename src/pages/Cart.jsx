@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Cart({ cart, updateQuantity }) {
   const total = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -18,19 +20,34 @@ export default function Cart({ cart, updateQuantity }) {
 
               <div>
                 <h3>{item.name}</h3>
-                <p>${item.price}</p>
+                <p>${item.price.toFixed(2)}</p>
 
                 <div className="quantity-controls">
-                  <button onClick={() => updateQuantity(item.id, -1)}>-</button>
+                  <button
+                    onClick={() => updateQuantity(item.id, -1)}
+                  >
+                    -
+                  </button>
+
                   <span>{item.quantity}</span>
-                  <button onClick={() => updateQuantity(item.id, 1)}>+</button>
+
+                  <button
+                    onClick={() => updateQuantity(item.id, 1)}
+                  >
+                    +
+                  </button>
                 </div>
               </div>
             </div>
           ))}
 
           <h2>Total: ${total.toFixed(2)}</h2>
-          <button className="checkout-btn">Checkout</button>
+
+          <Link to="/checkout">
+            <button className="checkout-btn">
+              Checkout
+            </button>
+          </Link>
         </>
       )}
     </div>
